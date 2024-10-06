@@ -7,8 +7,9 @@ st.title("My LLM App")
 
 #openai_api_key=st.sidebar.text_input("Open API key",type="password")
 
+groq_llama_api_key=st.secrets.api_key
 client = Groq(
-    api_key='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',
+    api_key=groq_llama_api_key,
 )
 
 def generate_response(input_text):
